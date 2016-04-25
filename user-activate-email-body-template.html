@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Email</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+
+
+
+
+
+
+
+    <!--[if lt IE 9]>
+
+    <script src="http://fineui.com/lib/html5shim/html5.js"></script>
+
+    <![endif]-->
+
+
+
+
+
+    <style type="text/css">
+
+
+
+       body{
+
+            font-family: "Microsoft YaHei" !important;
+
+        }
+
+        li{
+
+            list-style: none;
+
+        }
+
+        .list-inline li{
+
+            display: inline;
+
+        }
+
+        .list-inline li a{
+
+            text-decoration: none;
+
+        }
+
+        .bs-docs-social {
+
+            background-color: #F5F5F5;
+
+            border-bottom: 1px solid #DDDDDD;
+
+            border-top: 1px solid #FFFFFF;
+
+            padding: 15px 0;
+
+            text-align: center;
+
+            font-size: 13px;
+
+        }
+
+        .largebox{
+
+            background: #e9e9e9;
+
+            height: 100%;
+
+            padding: 0;
+
+        }
+
+        .emailhead{
+
+            text-align: center;
+
+            width: 100%;
+
+           height:60px;
+
+			line-height:60px;
+
+            background: #fff;
+
+            border-top: 1px solid #c3c3c3;
+
+              border-bottom: 1px solid #c3c3c3;
+
+            padding:  0 0 0 0;
+
+        }
+
+        .sayHello{
+
+            padding: 3px 0 0 0;
+
+        }
+
+        .email-content,.url-content{
+
+            width: 694px;
+
+            height: 175px;
+
+            margin: auto;
+
+            margin-top: 30px;
+
+            background: #ffffff;
+
+            border-radius: 0 0 8px 8px;
+
+            border: 1px solid #c3c3c3;
+
+        }
+
+        .email-content{
+
+            text-align: center;
+
+            padding: 0;
+
+            overflow: hidden;
+
+
+
+        }
+
+      
+
+        .sayHello{
+
+            font-weight: bold;
+
+            font-size: 24px;
+
+            height: 40px;
+
+            line-height: 40px;
+
+            color: #101010;
+
+            padding:  0;
+
+            margin:0 0 5px 0;
+
+        }
+
+        .saywhat{
+
+            width: 500px;
+
+            font-size: 16px;
+
+            height: 62px;
+
+            color: rgb(87,87,87);
+
+            font-weight: normal;
+
+            padding: 0 20px 0 20px;
+
+            text-align: center;
+
+            margin: auto;
+
+            margin-bottom: 3px;
+
+        }
+
+        .confirm-button{
+
+            height: 67px;
+
+            line-height: 67px;
+
+            background: #ededed;
+
+            margin-bottom: 0px;
+
+                
+
+            text-align: center;
+
+        }
+
+        .confirm-button button{
+
+          
+
+        }
+
+        .url-content{
+
+            height: 74px;
+
+        }
+
+        .url-content p{
+
+             padding-left: 24px;
+
+            font-size: 14px;
+
+            color: #101010;
+
+            font-weight: bold;
+
+        }
+
+        #url{
+
+            display: block;
+
+            width: 599px;
+
+            height: 80px;
+
+        }
+
+        .footer-email{
+
+            margin-top: 26px;
+
+            text-align: center;
+
+        }
+
+        .footer-email a{
+
+            color: #575757;
+
+        }
+
+         .footer-email a:hover{
+
+            color: #101010;
+
+            text-decoration: none;
+
+        }
+
+        .pic-content{
+
+            width: 694px;
+
+            margin: auto;
+
+            text-align: center;
+
+        }
+
+        .pic-content p{
+
+            padding: 15px 0 0 0;
+
+            font-size: 24px;
+
+            font-family: "Arial";
+
+            color: #878787;
+
+        }
+
+        .boldword{
+
+            font-weight: bold;
+
+        }
+
+        .footer-email{
+
+            font-size: 14px;
+
+            color: #878787;
+
+        }
+
+        .mybtn{
+
+            padding: 10px 15px 10px 15px;
+
+            width: 232px;
+
+            height: 44px;      
+
+            font-weight: bold;
+
+            color: rgb(248,96,5);
+
+            font-size: 18px;
+
+            background:#fff;
+
+            border: 1px solid #e2e3e5;
+
+            border-radius: 2px;
+
+            text-decoration: none;
+
+        }
+
+        .mybtn:hover{
+
+              color: rgb(248,96,5);
+
+              background: rgb(237,240,254);
+
+              border-color: rgb(226,227,229);
+
+        }
+
+    </style>
+
+</head>
+
+
+
+<body data-spy="scroll" >
+
+<div class="container-fluid largebox">
+
+<div class="container emailhead">
+
+        <img id="argument1" src="">
+
+</div>
+
+<dl class="container email-content">
+
+    <dt class="sayHello">Hi <span id="argument2">Uggg</span>
+
+    </dt>
+
+    <dt class="saywhat">Thanks so much for joining Treeth! To finish signing up,you just need to confirm that we got your email right.
+
+    </dt>
+
+    <dt class="confirm-button">
+
+        <a class="mybtn " id="argument3" href="" target="_blank">Confirm Your Email</a>
+
+    </dt> 
+
+
+
+</dl>
+
+<div class="container url-content">
+
+    <p>Button not working? Try pasting this link into your brower.</p>
+
+    <p><a href="" id="argument4" target="_blank"></a></p>
+
+</div>
+
+<div class="container pic-content">
+
+    <!--<p>Check out Treeth !</p>
+
+    <img src=" ">-->
+
+</div>
+
+    <div class="container footer-email">
+
+        <p>
+
+            <dl class="list-inline">
+
+                <tr>
+
+                <td><a href=""><img id="argument5" src="" style="vertical-align: middle;"> Facebook</a></td>
+
+                <td><a href=""><img id="argument6" src="" style="vertical-align: middle;"> Twitter</a></td>
+
+                <td><a href=""><img id="argument7" src="" style="vertical-align: middle;"> Google +</a></td>
+
+                </tr>
+
+            </dl>
+
+        </p>
+
+        <p>This email was sent to <span id="argument8">xxx@gamil.com</span>.</p>
+
+        <p>Have a question? <span class="boldword">Contact us:<a>contact@treeth.com</a></span></p>
+
+        <p>Treeth Inc.</p>
+
+        <p class="boldword">About|Privacy Policy</p>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
